@@ -1,0 +1,77 @@
+
+
+Objectives:
+    This lab is to learn the Sorted Linked List. 
+
+Specification: 
+    Construct a C++ program to build an sorted linked list which keeps name strings 
+	in order. 
+    Your program should satisfy the following constraints:
+    - Must use the linked list implementation for the Sorted_List ADT (class).
+    - Must use the pointers and dynamically allocated nodes to keep names. 
+    - Must consist of at least 1 header file (*.h, at least 1 implementation file (*.cpp)
+	and 1 driver file (sorted_list_Dr.cpp) that includes a main function. 
+    - Must use at least 1 'class' construct and must use 1 or more instances
+	instantiated from the class(es) defined. 
+    - Must use at least 1 'namespace' construct. 
+    - The maximum number of names (max length of list) is 100. 
+    - The maximum size of a name is 10 characters.   
+
+Process: 
+    Read input name string one by one, insert the item into the sorted linked list in 
+	ascending order, and show all intemediate list items while building the linked 
+	list (like the example output below). 
+    	Also print pointers (addresses) of all items in the list. 
+    You may use 'some parts' of the example programs shown in the textbook. 
+    Use the given input and use the same output format.
+    However, test your program with other input data sets. 
+    When grading, a different data set can be also tested. 
+
+    Before you start programming, draw the linked list 'manually'. 
+	- Draw the linked list 'manually (using a pen and a paper)' to show 'step-by-step' 		  how the linked list is constructed with each input data (like the output below).
+    While you run your program, find and write down the address of each node in the drawing.
+	- Compare your drawing with computer outputs. 
+	- Keep and submit the hand-drawn diagrams. 
+
+Input:
+    Unsorted random input data from a file (use the following input data): 
+	(input file name: test.in) 
+	Insert Bob 
+	Insert Ariel
+	Insert Carl
+	Insert Brady
+	Delete Ariel
+	Delete Bob 
+	Insert Tom 
+	Insert Bradley 
+	Insert Jerry 
+	Delete Bradely 
+	Insert Bradely 
+	Insert Adam
+ 	Insert Brooks 
+	Insert Bob
+	Insert Ariel 
+
+Output:
+    Output should look like the following (Use the same output format):  
+	(output file name: test.out)
+	-- CPSC 131: Lab#2: Sorted Linked List -- 
+	-- 1 --
+	Insert: Bob
+	List: Bob-> 
+	Pointers: 0100 -> 
+	-- 2 --
+	Insert: Ariel
+	List: Ariel -> Bob -> 
+	Pointers: 0104 -> 0100
+	-- 3 --
+
+	... (insert/delete/print in the similar way) ... 
+
+	-- 15 --
+	Insert: Ariel
+	List:  Adam -> Ariel-> Bob -> Bradley -> Brady -> Brooks -> Carl -> Jerry -> Tom 
+	Pointers: 01dd -> 01f0 -> 01f4 -> ...(in the similar way)... -> 01cc  
+	-- The End of CPSC 131 Lab#2 --                
+
+
